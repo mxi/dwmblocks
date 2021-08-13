@@ -1,0 +1,26 @@
+dwmblocks - a status monitor for dwm
+------------------------------------
+The upstream implementation of dwmblocks which this repository is based
+on can be found at https://github.com/ashish-yadav11/dwmblocks.
+
+
+Installation
+------------
+If dwm IS already patched with dwm-systray, then apply
+
+	dwm-systray-dwmblocks-6.2.diff
+
+to remove it AND apply this dwmblocks patch over it.
+
+Alternatively, if you DO NOT have dwm-systray patched, you can apply
+
+	dwm-dwmblocks-6.2.diff
+
+to get it immediately.
+
+
+Scripts
+-------
+My personal scripts used to update and respond to clicks on these blocks
+are located in my dotfiles repository at https://github.com/mxi/dotfiles
+in the script/blocks subdirectory.
