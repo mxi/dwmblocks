@@ -43,13 +43,13 @@ static const char delimiter[] = { '\x0b', ' ', '|', ' ', DELIMITERENDCHAR };
 
 static Block blocks[] = {
 /*  pathu                             pathc                           interval        signal */
-	{ PATH("pacman/update.sh"),       NULL,                           3600,           1},
-	{ PATH("mem/update.sh"),          NULL,                           5,              2},
-	{ PATH("disk/update.sh"),         PATH("disk/click.sh"),          3600,           4},
+	{ PATH("mem/update.sh"),          NULL,                           5,              1},
+	{ PATH("disk/update.sh"),         NULL,                           3600,           2},
 	{ PATH("audio-sink/update.sh"),   PATH("audio-sink/click.sh"),    0,              6},
 	{ PATH("audio-source/update.sh"), PATH("audio-source/click.sh"),  0,              7},
 	{ PATH("brightness/update.sh"),   NULL,                           0,              3},
-	{ PATH("battery/update.sh"),      PATH("battery/click.sh"),       5,              8},
-	{ PATH("datetime/update.sh"),     PATH("datetime/click.sh"),      5,              5},
+	{ PATH("battery/update.sh"),      PATH("battery/click.sh"),       5,              4},
+	{ PATH("net/update.sh"),          NULL,                           5,              5},
+	{ PATH("datetime/update.sh"),     NULL,                           5,              8},
 	{ NULL } /* just to mark the end of the array */
 };
